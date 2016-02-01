@@ -18,11 +18,11 @@ public:
                         ss<<"->";
                     }else{
                         res.push_back(ss.str());
-												ss.str("");
+			ss.str("");
                     }
                 }else{
-                    res.push_back(ss.str());
-										ss.str("");
+                    	res.push_back(ss.str());
+			ss.str("");
                 }
             }else if(status == 1){
                 if(it < nums.end()-1){
@@ -30,12 +30,12 @@ public:
                         ss<<*it;
                         status = 0;
                         res.push_back(ss.str());
-												ss.str("");
+			ss.str("");
                     }
                 }else{
-                    ss<<*it;
-                    res.push_back(ss.str());
-										ss.str("");
+                    	ss<<*it;
+                    	res.push_back(ss.str());
+			ss.str("");
                 }
                 
             }
