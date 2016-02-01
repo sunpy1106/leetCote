@@ -16,17 +16,12 @@ public:
                     if(*(it+1) == *it + 1){
                         status = 1;
                         ss<<"->";
-												cout<<"part 1"<<endl;
                     }else{
                         res.push_back(ss.str());
-												cout<<"part 2"<<endl;
-												cout<<ss.str()<<endl;
 												ss.str("");
                     }
                 }else{
                     res.push_back(ss.str());
-										cout<<"part 3 "<<endl;
-										cout<<ss.str()<<endl;
 										ss.str("");
                 }
             }else if(status == 1){
@@ -35,22 +30,15 @@ public:
                         ss<<*it;
                         status = 0;
                         res.push_back(ss.str());
-												cout<<"part 4"<<endl;
-												cout<<ss.str()<<endl;
 												ss.str("");
                     }
                 }else{
                     ss<<*it;
                     res.push_back(ss.str());
-										cout<<"part 5"<<endl;
-										cout<<ss.str()<<endl;
 										ss.str("");
                 }
                 
             }
-        }
-        for(vector<string>::iterator it = res.begin();it!=res.end();it++){
-            cout<<*it<<endl;
         }
         return res;
         
